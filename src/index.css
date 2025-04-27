@@ -14,28 +14,32 @@ textarea {
   outline: none;
   resize: none;
 }
-/* notes-list use on the UL post-it section*/
+
 .notes-list {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
   margin: 0;
 }
-/* App section class for title header */
+
 .app-header__title {
   margin: 10px 20px 0px;
-  font-family: Arial, sans-serif;
+  font-family: Tuffy, sans-serif;
+  padding: 3px;
+background-color: rgb(245, 202, 228);
+opacity: 85%;
 }
-/* App section class for header container/Aside for the button and input */
+
+
 .app-header__controls {
   display: flex;
   align-items: center;
   margin: 10px 0 0 10px;
 }
-/* class for search button */
+
 .search,
-/* class for add-new button */
 .add-new {
+  font-family:Tuffy, sans-serif;
   font-size: 14px;
   padding: 5px;
   margin: 8px;
@@ -47,6 +51,7 @@ textarea {
 }
 
 .add-new {
+  font-family:Tuffy,sans-serif;
   border-radius: 5px;
   cursor: pointer;
   padding: 8px;
@@ -54,7 +59,7 @@ textarea {
   background-color: #eee;
   outline: none;
 }
-/* for each LI item- ea post-itnote */
+
 .note {
   font-family: "Permanent Marker", cursive;
   width: 200px;
@@ -68,13 +73,20 @@ textarea {
   flex-direction: column;
   position: relative;
 }
-/* Post-It classnames for the title and descriptions */
-.note__title,
+
+.note__title{
+  font-family: Tuffy,sans-serif;
+  width: 100%;
+  padding: 8px;
+  background: transparent;
+  color:black;
+}
 .note__description {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Homemade Apple", cursive;
   width: 100%;
   padding: 8px 14px;
   background: transparent;
+  color:rgb(14, 8, 46);
 }
 
 .note__title {
@@ -86,17 +98,17 @@ textarea {
   flex-grow: 1;
   font-size: 14px;
 }
-/* className for the "X" span*/
+
 .note__delete {
   position: absolute;
   top: 0px;
   right: 0px;
   font-size: 20px;
-  color: lightgrey;
+  color: rgb(236, 8, 8);
   padding: 5px;
 }
 
 .note__delete:hover {
-  color: black;
+  color: rgb(240, 137, 137);
   cursor: pointer;
 }
